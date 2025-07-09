@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>679 Store | Marketplace</title>
+  <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" type="text/css">
+  <link href="{% static 'css/style.css' %}  " rel="stylesheet"/>
+  <link href="{% static 'css/coming.css' %}  " rel="stylesheet"/>
+</head>
+<body>
+
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <a class="navbar-brand" href="#">679 Store</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="{% url "index" %}"> Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url "features" %}"> Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url "about" %}"> About</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+{% block content %}{% endblock content %}
+
+  <!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <p class="mb-1">&copy; 2025 679 Store. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="{% url "about" %}" class="text-white">Contact</a>
+  </div>
+</footer>
+<script src="{% static 'js/jquery-3.3.1.min.js' %}  "></script>
+<script src="{% static 'js/bootstrap.min.js' %}  "></script>
+</body>
+</html>

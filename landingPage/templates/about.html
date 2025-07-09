@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- About Section -->
+<section class="container py-5">
+  <h1 class="text-center mb-4">About 679 Store</h1>
+  <p class="lead text-center mb-5">
+    679 Store is a tech-powered marketplace built to support African fashion, creativity, and commerce. We make it easy for vendors and customers to interact directly using AI for measuring, virtual try-ons, and engaging product videos.
+  </p>
+
+  <!-- Founders Section -->
+  <div class="row justify-content-center">
+    <!-- Founder -->
+    <div class="col-md-5 text-center mb-5">
+      <img src="{% static 'img/ib.jpg' %}" class="rounded-circle mb-3" alt="Founder Photo" width="180" height="180">
+      <h4 class="fw-bold">Ibrahim Baba</h4>
+      <p class="text-muted">Founder / Product Architect</p>
+      <p>
+        Ibrahim is a Mechatronics Engineer with a passion for AI-driven tools and local empowerment. He conceptualized 679 Store to bridge tech with traditional African commerce.
+      </p>
+      <div>
+        <a href="https://x.com/babs1679?t=HpRbnX4mrUeQtOhWKXuFQQ&s=09" class="me-2"><img src="{% static 'img/icons/twitter.svg' %}" alt="Twitter" width="24"></a>
+        <a href="https://www.linkedin.com/in/ibrahim-baba-jr-538ab4232?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="{% static 'img/icons/linkedin.svg' %}" alt="LinkedIn" width="24"></a>
+      </div>
+    </div>
+
+    <!-- Co-Founder -->
+    <div class="col-md-5 text-center mb-5">
+      <img src="{% static 'img/abdul.jpg' %}" class="rounded-circle mb-3" alt="Co-founder Photo" width="180" height="180">
+      <h4 class="fw-bold">Abdullahi Iyanuoluwa</h4>
+      <p class="text-muted">Co-Founder / Marketing & Community</p>
+      <p>
+        Abdullahi is a digital strategist focused on African fashion branding. He leads vendor onboarding, partnerships, and helps grow the 679 Store community with purpose and clarity.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+{% endblock content %}

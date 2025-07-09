@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<section class="container py-5">
+  <h2 class="text-center mb-5">Explore Our Powerful Features</h2>
+
+  <!-- Feature 1 -->
+  <div class="row align-items-center mb-5">
+    <div class="col-md-6">
+      <img src="{% static 'img/measure.jpg' %}" alt="AI Measurement" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-md-6">
+      <h3>AI-Based Body Measurement</h3>
+      <p>
+        Skip the stress of using measuring tapes. With just a clear photo, our smart AI system calculates your key body dimensions instantly. This feature is ideal for users who want to order tailored clothing without visiting a physical store. Tailors and fashion brands receive the measurement data directly and accurately — saving time and reducing errors.
+      </p>
+    </div>
+  </div>
+
+  <!-- Feature 2 -->
+  <div class="row align-items-center mb-5 flex-md-row-reverse">
+    <div class="col-md-6">
+      <img src="{% static 'img/tryon.jpeg' %}" alt="Virtual Try-On" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-md-6">
+      <h3>Virtual Try-On Preview</h3>
+      <p>
+        Curious how you'd look in that new outfit? Upload your image and our AI will overlay the outfit onto your photo — creating a realistic preview. You can compare different outfits, save previews, or even share them to friends for feedback before you buy. This builds confidence in purchases and reduces returns.
+      </p>
+    </div>
+  </div>
+
+  <!-- Feature 3 -->
+  <div class="row align-items-center mb-5">
+    <div class="col-md-6">
+      <video class="video-thumb" autoplay loop muted playsinline>
+          <source src="{% static 'vid/video1.mp4' %}" type="video/mp4">
+        </video>
+    </div>
+    <div class="col-md-6">
+      <h3>Short-Form Product Videos</h3>
+      <p>
+        Every vendor must post a short video for each product, making listings more trustworthy and visually appealing. Think of it as a TikTok-style shop window — videos help buyers see movement, shine, and detail that pictures can't capture alone. Videos appear in a scrollable feed to keep users engaged and exploring.
+      </p>
+    </div>
+  </div>
+
+  <!-- Feature 4 -->
+  <div class="row align-items-center mb-5 flex-md-row-reverse">
+    <div class="col-md-6">
+      <img src="{% static 'img/shop.png' %}" alt="Direct Vendor Contact" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-md-6">
+      <h3>Direct Vendor Communication</h3>
+      <p>
+        No complex checkout system — just connect and deal. Buyers can reach sellers directly via WhatsApp, phone, or social media links on the vendor’s profile. This makes it easier to ask questions, negotiate, or arrange delivery based on your location and preferences. It brings back the human touch to online buying.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+{% endblock content %}

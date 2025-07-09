@@ -1,0 +1,1 @@
+web: gunicorn landinPage.wsgi --log-file -

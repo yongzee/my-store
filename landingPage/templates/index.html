@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <img src="{% static 'img/bg.jpg' %}" class="bg-img" alt="679 store">
+    <div class="hero-text">
+      <h1 class="display-4 fw-bold">Shop Local. Shop Smart.</h1>
+      <p class="lead">AI-powered clothing & goods marketplace</p>
+      <a href="{% url "soon" %}" class="btn btn-light btn-lg mt-3">Get Started</a>
+    </div>
+  </section>
+
+<!-- Alternating Features Section -->
+  <section class="container py-5">
+    <!-- Feature 1 -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="{% static "img/tryon.jpeg" %}" class="placeholder-img"  alt="Visual Try-on">
+      </div>
+      <div class="col-md-6">
+        <h3>Visual Try-On</h3>
+        <p>Preview clothing directly on your photo before purchase using our AI-powered system.</p>
+      </div>
+    </div>
+    <!-- Feature 2 -->
+    <div class="row align-items-center mb-5 flex-md-row-reverse">
+      <div class="col-md-6">
+        <img src="{% static "img/tape.jpg" %}" class="placeholder-img"  alt="Smart Measurements">
+      </div>
+      <div class="col-md-6">
+        <h3>Smart Measurements</h3>
+        <p>Our AI detects your body size from a single picture and helps tailors fit you better.</p>
+      </div>
+    </div>
+    <!-- Feature 3 -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="{% static "img/direct.png" %}" class="placeholder-img"  alt="Direct Contact">
+      </div>
+      <div class="col-md-6">
+        <h3>Direct Contact</h3>
+        <p>Skip the cart! Connect directly with vendors via WhatsApp, phone, or Instagram.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Videos Section -->
+  <section class="container py-5">
+    <h3 class="text-center mb-4">Product Videos</h3>
+    <div class="row text-center">
+      <div class="col-6 col-md-2 mb-3">
+        <video class="video-thumb" autoplay loop muted playsinline>
+          <source src="{% static 'vid/video1.mp4' %}" type="video/mp4">
+        </video>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <video class="video-thumb" autoplay loop muted playsinline>
+          <source src="{% static 'vid/video2.mp4' %}" type="video/mp4">
+        </video>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <video class="video-thumb" autoplay loop muted playsinline>
+          <source src="{% static 'vid/video3.mp4' %}" type="video/mp4">
+        </video>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <video class="video-thumb" autoplay loop muted playsinline>
+          <source src="{% static 'vid/video4.mp4' %}" type="video/mp4">
+        </video>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <video class="video-thumb" autoplay loop muted playsinline>
+          <source src="{% static 'vid/video5.mp4' %}" type="video/mp4">
+        </video>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <video class="video-thumb" autoplay loop muted playsinline>
+          <source src="{% static 'vid/video6.mp4' %}" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+{% endblock content %}
+

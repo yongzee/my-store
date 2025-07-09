@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+    <div class="coming-soon-container">
+
+    <!-- Background Image using <img> -->
+        <img src="{% static 'img/bg2.jpeg' %}" class="bg-image" alt="Background Image">
+
+        <!-- Dark overlay -->
+        <div class="overlay"></div>
+
+            <!-- Text content -->
+        <div class="content container text-center text-white">
+            <h1 class="display-4 fw-bold">679 Store is Coming Soon</h1>
+            <p class="lead">We're still building something amazing for African creators and buyers. Stay tuned!</p>
+            <a href="{% url "index" %}" class="btn btn-light btn-lg mt-3">Back to Home</a>
+        </div>
+
+    </div>
+
+{% endblock content %}
+
